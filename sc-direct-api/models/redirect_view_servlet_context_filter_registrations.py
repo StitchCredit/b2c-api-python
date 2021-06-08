@@ -33,65 +33,44 @@ class RedirectViewServletContextFilterRegistrations(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'servlet_name_mappings': 'list[str]',
         'url_pattern_mappings': 'list[str]',
+        'servlet_name_mappings': 'list[str]',
         'name': 'str',
         'class_name': 'str',
         'init_parameters': 'dict(str, str)'
     }
 
     attribute_map = {
-        'servlet_name_mappings': 'servletNameMappings',
         'url_pattern_mappings': 'urlPatternMappings',
+        'servlet_name_mappings': 'servletNameMappings',
         'name': 'name',
         'class_name': 'className',
         'init_parameters': 'initParameters'
     }
 
-    def __init__(self, servlet_name_mappings=None, url_pattern_mappings=None, name=None, class_name=None, init_parameters=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, url_pattern_mappings=None, servlet_name_mappings=None, name=None, class_name=None, init_parameters=None, local_vars_configuration=None):  # noqa: E501
         """RedirectViewServletContextFilterRegistrations - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
-        self._servlet_name_mappings = None
         self._url_pattern_mappings = None
+        self._servlet_name_mappings = None
         self._name = None
         self._class_name = None
         self._init_parameters = None
         self.discriminator = None
 
-        if servlet_name_mappings is not None:
-            self.servlet_name_mappings = servlet_name_mappings
         if url_pattern_mappings is not None:
             self.url_pattern_mappings = url_pattern_mappings
+        if servlet_name_mappings is not None:
+            self.servlet_name_mappings = servlet_name_mappings
         if name is not None:
             self.name = name
         if class_name is not None:
             self.class_name = class_name
         if init_parameters is not None:
             self.init_parameters = init_parameters
-
-    @property
-    def servlet_name_mappings(self):
-        """Gets the servlet_name_mappings of this RedirectViewServletContextFilterRegistrations.  # noqa: E501
-
-
-        :return: The servlet_name_mappings of this RedirectViewServletContextFilterRegistrations.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._servlet_name_mappings
-
-    @servlet_name_mappings.setter
-    def servlet_name_mappings(self, servlet_name_mappings):
-        """Sets the servlet_name_mappings of this RedirectViewServletContextFilterRegistrations.
-
-
-        :param servlet_name_mappings: The servlet_name_mappings of this RedirectViewServletContextFilterRegistrations.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._servlet_name_mappings = servlet_name_mappings
 
     @property
     def url_pattern_mappings(self):
@@ -113,6 +92,27 @@ class RedirectViewServletContextFilterRegistrations(object):
         """
 
         self._url_pattern_mappings = url_pattern_mappings
+
+    @property
+    def servlet_name_mappings(self):
+        """Gets the servlet_name_mappings of this RedirectViewServletContextFilterRegistrations.  # noqa: E501
+
+
+        :return: The servlet_name_mappings of this RedirectViewServletContextFilterRegistrations.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._servlet_name_mappings
+
+    @servlet_name_mappings.setter
+    def servlet_name_mappings(self, servlet_name_mappings):
+        """Sets the servlet_name_mappings of this RedirectViewServletContextFilterRegistrations.
+
+
+        :param servlet_name_mappings: The servlet_name_mappings of this RedirectViewServletContextFilterRegistrations.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._servlet_name_mappings = servlet_name_mappings
 
     @property
     def name(self):

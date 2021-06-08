@@ -33,79 +33,100 @@ class RedirectViewServletContextJspConfigDescriptorJspPropertyGroups(object):
                             and the value is json key in definition.
     """
     openapi_types = {
+        'buffer': 'str',
         'default_content_type': 'str',
-        'include_preludes': 'list[str]',
-        'el_ignored': 'str',
-        'is_xml': 'str',
-        'page_encoding': 'str',
-        'include_codas': 'list[str]',
         'scripting_invalid': 'str',
-        'error_on_undeclared_namespace': 'str',
         'deferred_syntax_allowed_as_literal': 'str',
         'trim_directive_whitespaces': 'str',
+        'error_on_undeclared_namespace': 'str',
         'url_patterns': 'list[str]',
-        'buffer': 'str'
+        'el_ignored': 'str',
+        'page_encoding': 'str',
+        'include_preludes': 'list[str]',
+        'include_codas': 'list[str]',
+        'is_xml': 'str'
     }
 
     attribute_map = {
+        'buffer': 'buffer',
         'default_content_type': 'defaultContentType',
-        'include_preludes': 'includePreludes',
-        'el_ignored': 'elIgnored',
-        'is_xml': 'isXml',
-        'page_encoding': 'pageEncoding',
-        'include_codas': 'includeCodas',
         'scripting_invalid': 'scriptingInvalid',
-        'error_on_undeclared_namespace': 'errorOnUndeclaredNamespace',
         'deferred_syntax_allowed_as_literal': 'deferredSyntaxAllowedAsLiteral',
         'trim_directive_whitespaces': 'trimDirectiveWhitespaces',
+        'error_on_undeclared_namespace': 'errorOnUndeclaredNamespace',
         'url_patterns': 'urlPatterns',
-        'buffer': 'buffer'
+        'el_ignored': 'elIgnored',
+        'page_encoding': 'pageEncoding',
+        'include_preludes': 'includePreludes',
+        'include_codas': 'includeCodas',
+        'is_xml': 'isXml'
     }
 
-    def __init__(self, default_content_type=None, include_preludes=None, el_ignored=None, is_xml=None, page_encoding=None, include_codas=None, scripting_invalid=None, error_on_undeclared_namespace=None, deferred_syntax_allowed_as_literal=None, trim_directive_whitespaces=None, url_patterns=None, buffer=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, buffer=None, default_content_type=None, scripting_invalid=None, deferred_syntax_allowed_as_literal=None, trim_directive_whitespaces=None, error_on_undeclared_namespace=None, url_patterns=None, el_ignored=None, page_encoding=None, include_preludes=None, include_codas=None, is_xml=None, local_vars_configuration=None):  # noqa: E501
         """RedirectViewServletContextJspConfigDescriptorJspPropertyGroups - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
+        self._buffer = None
         self._default_content_type = None
-        self._include_preludes = None
-        self._el_ignored = None
-        self._is_xml = None
-        self._page_encoding = None
-        self._include_codas = None
         self._scripting_invalid = None
-        self._error_on_undeclared_namespace = None
         self._deferred_syntax_allowed_as_literal = None
         self._trim_directive_whitespaces = None
+        self._error_on_undeclared_namespace = None
         self._url_patterns = None
-        self._buffer = None
+        self._el_ignored = None
+        self._page_encoding = None
+        self._include_preludes = None
+        self._include_codas = None
+        self._is_xml = None
         self.discriminator = None
 
+        if buffer is not None:
+            self.buffer = buffer
         if default_content_type is not None:
             self.default_content_type = default_content_type
-        if include_preludes is not None:
-            self.include_preludes = include_preludes
-        if el_ignored is not None:
-            self.el_ignored = el_ignored
-        if is_xml is not None:
-            self.is_xml = is_xml
-        if page_encoding is not None:
-            self.page_encoding = page_encoding
-        if include_codas is not None:
-            self.include_codas = include_codas
         if scripting_invalid is not None:
             self.scripting_invalid = scripting_invalid
-        if error_on_undeclared_namespace is not None:
-            self.error_on_undeclared_namespace = error_on_undeclared_namespace
         if deferred_syntax_allowed_as_literal is not None:
             self.deferred_syntax_allowed_as_literal = deferred_syntax_allowed_as_literal
         if trim_directive_whitespaces is not None:
             self.trim_directive_whitespaces = trim_directive_whitespaces
+        if error_on_undeclared_namespace is not None:
+            self.error_on_undeclared_namespace = error_on_undeclared_namespace
         if url_patterns is not None:
             self.url_patterns = url_patterns
-        if buffer is not None:
-            self.buffer = buffer
+        if el_ignored is not None:
+            self.el_ignored = el_ignored
+        if page_encoding is not None:
+            self.page_encoding = page_encoding
+        if include_preludes is not None:
+            self.include_preludes = include_preludes
+        if include_codas is not None:
+            self.include_codas = include_codas
+        if is_xml is not None:
+            self.is_xml = is_xml
+
+    @property
+    def buffer(self):
+        """Gets the buffer of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+
+
+        :return: The buffer of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :rtype: str
+        """
+        return self._buffer
+
+    @buffer.setter
+    def buffer(self, buffer):
+        """Sets the buffer of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
+
+
+        :param buffer: The buffer of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :type: str
+        """
+
+        self._buffer = buffer
 
     @property
     def default_content_type(self):
@@ -129,111 +150,6 @@ class RedirectViewServletContextJspConfigDescriptorJspPropertyGroups(object):
         self._default_content_type = default_content_type
 
     @property
-    def include_preludes(self):
-        """Gets the include_preludes of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-
-
-        :return: The include_preludes of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._include_preludes
-
-    @include_preludes.setter
-    def include_preludes(self, include_preludes):
-        """Sets the include_preludes of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
-
-
-        :param include_preludes: The include_preludes of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._include_preludes = include_preludes
-
-    @property
-    def el_ignored(self):
-        """Gets the el_ignored of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-
-
-        :return: The el_ignored of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :rtype: str
-        """
-        return self._el_ignored
-
-    @el_ignored.setter
-    def el_ignored(self, el_ignored):
-        """Sets the el_ignored of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
-
-
-        :param el_ignored: The el_ignored of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :type: str
-        """
-
-        self._el_ignored = el_ignored
-
-    @property
-    def is_xml(self):
-        """Gets the is_xml of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-
-
-        :return: The is_xml of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :rtype: str
-        """
-        return self._is_xml
-
-    @is_xml.setter
-    def is_xml(self, is_xml):
-        """Sets the is_xml of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
-
-
-        :param is_xml: The is_xml of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :type: str
-        """
-
-        self._is_xml = is_xml
-
-    @property
-    def page_encoding(self):
-        """Gets the page_encoding of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-
-
-        :return: The page_encoding of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :rtype: str
-        """
-        return self._page_encoding
-
-    @page_encoding.setter
-    def page_encoding(self, page_encoding):
-        """Sets the page_encoding of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
-
-
-        :param page_encoding: The page_encoding of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :type: str
-        """
-
-        self._page_encoding = page_encoding
-
-    @property
-    def include_codas(self):
-        """Gets the include_codas of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-
-
-        :return: The include_codas of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._include_codas
-
-    @include_codas.setter
-    def include_codas(self, include_codas):
-        """Sets the include_codas of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
-
-
-        :param include_codas: The include_codas of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._include_codas = include_codas
-
-    @property
     def scripting_invalid(self):
         """Gets the scripting_invalid of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
 
@@ -253,27 +169,6 @@ class RedirectViewServletContextJspConfigDescriptorJspPropertyGroups(object):
         """
 
         self._scripting_invalid = scripting_invalid
-
-    @property
-    def error_on_undeclared_namespace(self):
-        """Gets the error_on_undeclared_namespace of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-
-
-        :return: The error_on_undeclared_namespace of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :rtype: str
-        """
-        return self._error_on_undeclared_namespace
-
-    @error_on_undeclared_namespace.setter
-    def error_on_undeclared_namespace(self, error_on_undeclared_namespace):
-        """Sets the error_on_undeclared_namespace of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
-
-
-        :param error_on_undeclared_namespace: The error_on_undeclared_namespace of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
-        :type: str
-        """
-
-        self._error_on_undeclared_namespace = error_on_undeclared_namespace
 
     @property
     def deferred_syntax_allowed_as_literal(self):
@@ -318,6 +213,27 @@ class RedirectViewServletContextJspConfigDescriptorJspPropertyGroups(object):
         self._trim_directive_whitespaces = trim_directive_whitespaces
 
     @property
+    def error_on_undeclared_namespace(self):
+        """Gets the error_on_undeclared_namespace of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+
+
+        :return: The error_on_undeclared_namespace of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :rtype: str
+        """
+        return self._error_on_undeclared_namespace
+
+    @error_on_undeclared_namespace.setter
+    def error_on_undeclared_namespace(self, error_on_undeclared_namespace):
+        """Sets the error_on_undeclared_namespace of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
+
+
+        :param error_on_undeclared_namespace: The error_on_undeclared_namespace of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :type: str
+        """
+
+        self._error_on_undeclared_namespace = error_on_undeclared_namespace
+
+    @property
     def url_patterns(self):
         """Gets the url_patterns of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
 
@@ -339,25 +255,109 @@ class RedirectViewServletContextJspConfigDescriptorJspPropertyGroups(object):
         self._url_patterns = url_patterns
 
     @property
-    def buffer(self):
-        """Gets the buffer of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+    def el_ignored(self):
+        """Gets the el_ignored of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
 
 
-        :return: The buffer of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :return: The el_ignored of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
         :rtype: str
         """
-        return self._buffer
+        return self._el_ignored
 
-    @buffer.setter
-    def buffer(self, buffer):
-        """Sets the buffer of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
+    @el_ignored.setter
+    def el_ignored(self, el_ignored):
+        """Sets the el_ignored of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
 
 
-        :param buffer: The buffer of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :param el_ignored: The el_ignored of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
         :type: str
         """
 
-        self._buffer = buffer
+        self._el_ignored = el_ignored
+
+    @property
+    def page_encoding(self):
+        """Gets the page_encoding of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+
+
+        :return: The page_encoding of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :rtype: str
+        """
+        return self._page_encoding
+
+    @page_encoding.setter
+    def page_encoding(self, page_encoding):
+        """Sets the page_encoding of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
+
+
+        :param page_encoding: The page_encoding of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :type: str
+        """
+
+        self._page_encoding = page_encoding
+
+    @property
+    def include_preludes(self):
+        """Gets the include_preludes of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+
+
+        :return: The include_preludes of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._include_preludes
+
+    @include_preludes.setter
+    def include_preludes(self, include_preludes):
+        """Sets the include_preludes of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
+
+
+        :param include_preludes: The include_preludes of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._include_preludes = include_preludes
+
+    @property
+    def include_codas(self):
+        """Gets the include_codas of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+
+
+        :return: The include_codas of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._include_codas
+
+    @include_codas.setter
+    def include_codas(self, include_codas):
+        """Sets the include_codas of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
+
+
+        :param include_codas: The include_codas of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._include_codas = include_codas
+
+    @property
+    def is_xml(self):
+        """Gets the is_xml of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+
+
+        :return: The is_xml of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :rtype: str
+        """
+        return self._is_xml
+
+    @is_xml.setter
+    def is_xml(self, is_xml):
+        """Sets the is_xml of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.
+
+
+        :param is_xml: The is_xml of this RedirectViewServletContextJspConfigDescriptorJspPropertyGroups.  # noqa: E501
+        :type: str
+        """
+
+        self._is_xml = is_xml
 
     def to_dict(self):
         """Returns the model properties as a dict"""

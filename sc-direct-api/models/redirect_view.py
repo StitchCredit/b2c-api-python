@@ -51,11 +51,11 @@ class RedirectView(object):
         'expand_uri_template_variables': 'bool',
         'propagate_query_params': 'bool',
         'hosts': 'list[str]',
-        'propagate_query_properties': 'bool',
         'redirect_view': 'bool',
-        'attributes_map': 'dict(str, object)',
+        'propagate_query_properties': 'bool',
         'attributes_csv': 'str',
-        'attributes': 'dict(str, str)'
+        'attributes': 'dict(str, str)',
+        'attributes_map': 'dict(str, object)'
     }
 
     attribute_map = {
@@ -77,14 +77,14 @@ class RedirectView(object):
         'expand_uri_template_variables': 'expandUriTemplateVariables',
         'propagate_query_params': 'propagateQueryParams',
         'hosts': 'hosts',
-        'propagate_query_properties': 'propagateQueryProperties',
         'redirect_view': 'redirectView',
-        'attributes_map': 'attributesMap',
+        'propagate_query_properties': 'propagateQueryProperties',
         'attributes_csv': 'attributesCSV',
-        'attributes': 'attributes'
+        'attributes': 'attributes',
+        'attributes_map': 'attributesMap'
     }
 
-    def __init__(self, application_context=None, servlet_context=None, content_type=None, request_context_attribute=None, static_attributes=None, expose_path_variables=None, expose_context_beans_as_attributes=None, exposed_context_bean_names=None, bean_name=None, url=None, context_relative=None, http10_compatible=None, expose_model_attributes=None, encoding_scheme=None, status_code=None, expand_uri_template_variables=None, propagate_query_params=None, hosts=None, propagate_query_properties=None, redirect_view=None, attributes_map=None, attributes_csv=None, attributes=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, application_context=None, servlet_context=None, content_type=None, request_context_attribute=None, static_attributes=None, expose_path_variables=None, expose_context_beans_as_attributes=None, exposed_context_bean_names=None, bean_name=None, url=None, context_relative=None, http10_compatible=None, expose_model_attributes=None, encoding_scheme=None, status_code=None, expand_uri_template_variables=None, propagate_query_params=None, hosts=None, redirect_view=None, propagate_query_properties=None, attributes_csv=None, attributes=None, attributes_map=None, local_vars_configuration=None):  # noqa: E501
         """RedirectView - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -108,11 +108,11 @@ class RedirectView(object):
         self._expand_uri_template_variables = None
         self._propagate_query_params = None
         self._hosts = None
-        self._propagate_query_properties = None
         self._redirect_view = None
-        self._attributes_map = None
+        self._propagate_query_properties = None
         self._attributes_csv = None
         self._attributes = None
+        self._attributes_map = None
         self.discriminator = None
 
         if application_context is not None:
@@ -151,16 +151,16 @@ class RedirectView(object):
             self.propagate_query_params = propagate_query_params
         if hosts is not None:
             self.hosts = hosts
-        if propagate_query_properties is not None:
-            self.propagate_query_properties = propagate_query_properties
         if redirect_view is not None:
             self.redirect_view = redirect_view
-        if attributes_map is not None:
-            self.attributes_map = attributes_map
+        if propagate_query_properties is not None:
+            self.propagate_query_properties = propagate_query_properties
         if attributes_csv is not None:
             self.attributes_csv = attributes_csv
         if attributes is not None:
             self.attributes = attributes
+        if attributes_map is not None:
+            self.attributes_map = attributes_map
 
     @property
     def application_context(self):
@@ -547,27 +547,6 @@ class RedirectView(object):
         self._hosts = hosts
 
     @property
-    def propagate_query_properties(self):
-        """Gets the propagate_query_properties of this RedirectView.  # noqa: E501
-
-
-        :return: The propagate_query_properties of this RedirectView.  # noqa: E501
-        :rtype: bool
-        """
-        return self._propagate_query_properties
-
-    @propagate_query_properties.setter
-    def propagate_query_properties(self, propagate_query_properties):
-        """Sets the propagate_query_properties of this RedirectView.
-
-
-        :param propagate_query_properties: The propagate_query_properties of this RedirectView.  # noqa: E501
-        :type: bool
-        """
-
-        self._propagate_query_properties = propagate_query_properties
-
-    @property
     def redirect_view(self):
         """Gets the redirect_view of this RedirectView.  # noqa: E501
 
@@ -589,25 +568,25 @@ class RedirectView(object):
         self._redirect_view = redirect_view
 
     @property
-    def attributes_map(self):
-        """Gets the attributes_map of this RedirectView.  # noqa: E501
+    def propagate_query_properties(self):
+        """Gets the propagate_query_properties of this RedirectView.  # noqa: E501
 
 
-        :return: The attributes_map of this RedirectView.  # noqa: E501
-        :rtype: dict(str, object)
+        :return: The propagate_query_properties of this RedirectView.  # noqa: E501
+        :rtype: bool
         """
-        return self._attributes_map
+        return self._propagate_query_properties
 
-    @attributes_map.setter
-    def attributes_map(self, attributes_map):
-        """Sets the attributes_map of this RedirectView.
+    @propagate_query_properties.setter
+    def propagate_query_properties(self, propagate_query_properties):
+        """Sets the propagate_query_properties of this RedirectView.
 
 
-        :param attributes_map: The attributes_map of this RedirectView.  # noqa: E501
-        :type: dict(str, object)
+        :param propagate_query_properties: The propagate_query_properties of this RedirectView.  # noqa: E501
+        :type: bool
         """
 
-        self._attributes_map = attributes_map
+        self._propagate_query_properties = propagate_query_properties
 
     @property
     def attributes_csv(self):
@@ -650,6 +629,27 @@ class RedirectView(object):
         """
 
         self._attributes = attributes
+
+    @property
+    def attributes_map(self):
+        """Gets the attributes_map of this RedirectView.  # noqa: E501
+
+
+        :return: The attributes_map of this RedirectView.  # noqa: E501
+        :rtype: dict(str, object)
+        """
+        return self._attributes_map
+
+    @attributes_map.setter
+    def attributes_map(self, attributes_map):
+        """Sets the attributes_map of this RedirectView.
+
+
+        :param attributes_map: The attributes_map of this RedirectView.  # noqa: E501
+        :type: dict(str, object)
+        """
+
+        self._attributes_map = attributes_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

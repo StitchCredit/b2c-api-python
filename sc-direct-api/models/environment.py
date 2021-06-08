@@ -33,50 +33,29 @@ class Environment(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'default_profiles': 'list[str]',
-        'active_profiles': 'list[str]'
+        'active_profiles': 'list[str]',
+        'default_profiles': 'list[str]'
     }
 
     attribute_map = {
-        'default_profiles': 'defaultProfiles',
-        'active_profiles': 'activeProfiles'
+        'active_profiles': 'activeProfiles',
+        'default_profiles': 'defaultProfiles'
     }
 
-    def __init__(self, default_profiles=None, active_profiles=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, active_profiles=None, default_profiles=None, local_vars_configuration=None):  # noqa: E501
         """Environment - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
-        self._default_profiles = None
         self._active_profiles = None
+        self._default_profiles = None
         self.discriminator = None
 
-        if default_profiles is not None:
-            self.default_profiles = default_profiles
         if active_profiles is not None:
             self.active_profiles = active_profiles
-
-    @property
-    def default_profiles(self):
-        """Gets the default_profiles of this Environment.  # noqa: E501
-
-
-        :return: The default_profiles of this Environment.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._default_profiles
-
-    @default_profiles.setter
-    def default_profiles(self, default_profiles):
-        """Sets the default_profiles of this Environment.
-
-
-        :param default_profiles: The default_profiles of this Environment.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._default_profiles = default_profiles
+        if default_profiles is not None:
+            self.default_profiles = default_profiles
 
     @property
     def active_profiles(self):
@@ -98,6 +77,27 @@ class Environment(object):
         """
 
         self._active_profiles = active_profiles
+
+    @property
+    def default_profiles(self):
+        """Gets the default_profiles of this Environment.  # noqa: E501
+
+
+        :return: The default_profiles of this Environment.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._default_profiles
+
+    @default_profiles.setter
+    def default_profiles(self, default_profiles):
+        """Sets the default_profiles of this Environment.
+
+
+        :param default_profiles: The default_profiles of this Environment.  # noqa: E501
+        :type: list[str]
+        """
+
+        self._default_profiles = default_profiles
 
     def to_dict(self):
         """Returns the model properties as a dict"""

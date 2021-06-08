@@ -33,117 +33,54 @@ class RedirectViewServletContextSessionCookieConfig(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'domain': 'str',
-        'secure': 'bool',
-        'http_only': 'bool',
         'name': 'str',
         'path': 'str',
         'comment': 'str',
-        'max_age': 'int'
+        'domain': 'str',
+        'secure': 'bool',
+        'max_age': 'int',
+        'http_only': 'bool'
     }
 
     attribute_map = {
-        'domain': 'domain',
-        'secure': 'secure',
-        'http_only': 'httpOnly',
         'name': 'name',
         'path': 'path',
         'comment': 'comment',
-        'max_age': 'maxAge'
+        'domain': 'domain',
+        'secure': 'secure',
+        'max_age': 'maxAge',
+        'http_only': 'httpOnly'
     }
 
-    def __init__(self, domain=None, secure=None, http_only=None, name=None, path=None, comment=None, max_age=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, name=None, path=None, comment=None, domain=None, secure=None, max_age=None, http_only=None, local_vars_configuration=None):  # noqa: E501
         """RedirectViewServletContextSessionCookieConfig - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
-        self._domain = None
-        self._secure = None
-        self._http_only = None
         self._name = None
         self._path = None
         self._comment = None
+        self._domain = None
+        self._secure = None
         self._max_age = None
+        self._http_only = None
         self.discriminator = None
 
-        if domain is not None:
-            self.domain = domain
-        if secure is not None:
-            self.secure = secure
-        if http_only is not None:
-            self.http_only = http_only
         if name is not None:
             self.name = name
         if path is not None:
             self.path = path
         if comment is not None:
             self.comment = comment
+        if domain is not None:
+            self.domain = domain
+        if secure is not None:
+            self.secure = secure
         if max_age is not None:
             self.max_age = max_age
-
-    @property
-    def domain(self):
-        """Gets the domain of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
-
-
-        :return: The domain of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
-        :rtype: str
-        """
-        return self._domain
-
-    @domain.setter
-    def domain(self, domain):
-        """Sets the domain of this RedirectViewServletContextSessionCookieConfig.
-
-
-        :param domain: The domain of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
-        :type: str
-        """
-
-        self._domain = domain
-
-    @property
-    def secure(self):
-        """Gets the secure of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
-
-
-        :return: The secure of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
-        :rtype: bool
-        """
-        return self._secure
-
-    @secure.setter
-    def secure(self, secure):
-        """Sets the secure of this RedirectViewServletContextSessionCookieConfig.
-
-
-        :param secure: The secure of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
-        :type: bool
-        """
-
-        self._secure = secure
-
-    @property
-    def http_only(self):
-        """Gets the http_only of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
-
-
-        :return: The http_only of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
-        :rtype: bool
-        """
-        return self._http_only
-
-    @http_only.setter
-    def http_only(self, http_only):
-        """Sets the http_only of this RedirectViewServletContextSessionCookieConfig.
-
-
-        :param http_only: The http_only of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
-        :type: bool
-        """
-
-        self._http_only = http_only
+        if http_only is not None:
+            self.http_only = http_only
 
     @property
     def name(self):
@@ -209,6 +146,48 @@ class RedirectViewServletContextSessionCookieConfig(object):
         self._comment = comment
 
     @property
+    def domain(self):
+        """Gets the domain of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
+
+
+        :return: The domain of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        """Sets the domain of this RedirectViewServletContextSessionCookieConfig.
+
+
+        :param domain: The domain of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
+        :type: str
+        """
+
+        self._domain = domain
+
+    @property
+    def secure(self):
+        """Gets the secure of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
+
+
+        :return: The secure of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
+        :rtype: bool
+        """
+        return self._secure
+
+    @secure.setter
+    def secure(self, secure):
+        """Sets the secure of this RedirectViewServletContextSessionCookieConfig.
+
+
+        :param secure: The secure of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
+        :type: bool
+        """
+
+        self._secure = secure
+
+    @property
     def max_age(self):
         """Gets the max_age of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
 
@@ -228,6 +207,27 @@ class RedirectViewServletContextSessionCookieConfig(object):
         """
 
         self._max_age = max_age
+
+    @property
+    def http_only(self):
+        """Gets the http_only of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
+
+
+        :return: The http_only of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
+        :rtype: bool
+        """
+        return self._http_only
+
+    @http_only.setter
+    def http_only(self, http_only):
+        """Sets the http_only of this RedirectViewServletContextSessionCookieConfig.
+
+
+        :param http_only: The http_only of this RedirectViewServletContextSessionCookieConfig.  # noqa: E501
+        :type: bool
+        """
+
+        self._http_only = http_only
 
     def to_dict(self):
         """Returns the model properties as a dict"""

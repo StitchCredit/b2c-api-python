@@ -36,9 +36,9 @@ class ApplicationContext(object):
         'parent': 'ApplicationContext',
         'id': 'str',
         'display_name': 'str',
-        'autowire_capable_bean_factory': 'object',
-        'startup_date': 'int',
         'application_name': 'str',
+        'startup_date': 'int',
+        'autowire_capable_bean_factory': 'object',
         'environment': 'Environment',
         'bean_definition_count': 'int',
         'bean_definition_names': 'list[str]',
@@ -50,9 +50,9 @@ class ApplicationContext(object):
         'parent': 'parent',
         'id': 'id',
         'display_name': 'displayName',
-        'autowire_capable_bean_factory': 'autowireCapableBeanFactory',
-        'startup_date': 'startupDate',
         'application_name': 'applicationName',
+        'startup_date': 'startupDate',
+        'autowire_capable_bean_factory': 'autowireCapableBeanFactory',
         'environment': 'environment',
         'bean_definition_count': 'beanDefinitionCount',
         'bean_definition_names': 'beanDefinitionNames',
@@ -60,7 +60,7 @@ class ApplicationContext(object):
         'class_loader': 'classLoader'
     }
 
-    def __init__(self, parent=None, id=None, display_name=None, autowire_capable_bean_factory=None, startup_date=None, application_name=None, environment=None, bean_definition_count=None, bean_definition_names=None, parent_bean_factory=None, class_loader=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, parent=None, id=None, display_name=None, application_name=None, startup_date=None, autowire_capable_bean_factory=None, environment=None, bean_definition_count=None, bean_definition_names=None, parent_bean_factory=None, class_loader=None, local_vars_configuration=None):  # noqa: E501
         """ApplicationContext - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -69,9 +69,9 @@ class ApplicationContext(object):
         self._parent = None
         self._id = None
         self._display_name = None
-        self._autowire_capable_bean_factory = None
-        self._startup_date = None
         self._application_name = None
+        self._startup_date = None
+        self._autowire_capable_bean_factory = None
         self._environment = None
         self._bean_definition_count = None
         self._bean_definition_names = None
@@ -85,12 +85,12 @@ class ApplicationContext(object):
             self.id = id
         if display_name is not None:
             self.display_name = display_name
-        if autowire_capable_bean_factory is not None:
-            self.autowire_capable_bean_factory = autowire_capable_bean_factory
-        if startup_date is not None:
-            self.startup_date = startup_date
         if application_name is not None:
             self.application_name = application_name
+        if startup_date is not None:
+            self.startup_date = startup_date
+        if autowire_capable_bean_factory is not None:
+            self.autowire_capable_bean_factory = autowire_capable_bean_factory
         if environment is not None:
             self.environment = environment
         if bean_definition_count is not None:
@@ -166,25 +166,25 @@ class ApplicationContext(object):
         self._display_name = display_name
 
     @property
-    def autowire_capable_bean_factory(self):
-        """Gets the autowire_capable_bean_factory of this ApplicationContext.  # noqa: E501
+    def application_name(self):
+        """Gets the application_name of this ApplicationContext.  # noqa: E501
 
 
-        :return: The autowire_capable_bean_factory of this ApplicationContext.  # noqa: E501
-        :rtype: object
+        :return: The application_name of this ApplicationContext.  # noqa: E501
+        :rtype: str
         """
-        return self._autowire_capable_bean_factory
+        return self._application_name
 
-    @autowire_capable_bean_factory.setter
-    def autowire_capable_bean_factory(self, autowire_capable_bean_factory):
-        """Sets the autowire_capable_bean_factory of this ApplicationContext.
+    @application_name.setter
+    def application_name(self, application_name):
+        """Sets the application_name of this ApplicationContext.
 
 
-        :param autowire_capable_bean_factory: The autowire_capable_bean_factory of this ApplicationContext.  # noqa: E501
-        :type: object
+        :param application_name: The application_name of this ApplicationContext.  # noqa: E501
+        :type: str
         """
 
-        self._autowire_capable_bean_factory = autowire_capable_bean_factory
+        self._application_name = application_name
 
     @property
     def startup_date(self):
@@ -208,25 +208,25 @@ class ApplicationContext(object):
         self._startup_date = startup_date
 
     @property
-    def application_name(self):
-        """Gets the application_name of this ApplicationContext.  # noqa: E501
+    def autowire_capable_bean_factory(self):
+        """Gets the autowire_capable_bean_factory of this ApplicationContext.  # noqa: E501
 
 
-        :return: The application_name of this ApplicationContext.  # noqa: E501
-        :rtype: str
+        :return: The autowire_capable_bean_factory of this ApplicationContext.  # noqa: E501
+        :rtype: object
         """
-        return self._application_name
+        return self._autowire_capable_bean_factory
 
-    @application_name.setter
-    def application_name(self, application_name):
-        """Sets the application_name of this ApplicationContext.
+    @autowire_capable_bean_factory.setter
+    def autowire_capable_bean_factory(self, autowire_capable_bean_factory):
+        """Sets the autowire_capable_bean_factory of this ApplicationContext.
 
 
-        :param application_name: The application_name of this ApplicationContext.  # noqa: E501
-        :type: str
+        :param autowire_capable_bean_factory: The autowire_capable_bean_factory of this ApplicationContext.  # noqa: E501
+        :type: object
         """
 
-        self._application_name = application_name
+        self._autowire_capable_bean_factory = autowire_capable_bean_factory
 
     @property
     def environment(self):
