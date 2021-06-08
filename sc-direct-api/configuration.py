@@ -97,7 +97,7 @@ class Configuration(object):
       )
     """
 
-    def __init__(self, host="http://efx-wgt.stitchcredit.com/api",
+    def __init__(self, host="https://efx-wgt.stitchcredit.com/api",
                  api_key=None, api_key_prefix=None,
                  username=None, password=None,
                  signing_info=None):
@@ -350,7 +350,7 @@ class Configuration(object):
         """
         return [
             {
-                'url': "http://efx-wgt.stitchcredit.com/api",
+                'url': "https://efx-wgt.stitchcredit.com/api",
                 'description': "local testing URL",
             }
         ]

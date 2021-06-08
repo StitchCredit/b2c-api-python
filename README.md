@@ -55,8 +55,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -73,7 +73,7 @@ direct_change_email_req_dto = sc-direct-api.DirectChangeEmailReqDTO() # DirectCh
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://efx-wgt.stitchcredit.com/api*
+All URIs are relative to *https://efx-wgt.stitchcredit.com/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

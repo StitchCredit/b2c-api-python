@@ -1,6 +1,6 @@
 # sc-direct-api.UserControllerApi
 
-All URIs are relative to *http://efx-wgt.stitchcredit.com/api*
+All URIs are relative to *https://efx-wgt.stitchcredit.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -53,8 +53,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -117,8 +117,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -180,8 +180,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -243,8 +243,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -306,8 +306,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -427,8 +427,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -491,8 +491,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -551,8 +551,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -611,8 +611,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -671,8 +671,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -731,8 +731,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -791,8 +791,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -851,8 +851,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -1384,8 +1384,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -1505,8 +1505,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -1569,8 +1569,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -1697,8 +1697,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -1761,8 +1761,8 @@ configuration = sc-direct-api.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://efx-wgt.stitchcredit.com/api
-configuration.host = "http://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with sc-direct-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
