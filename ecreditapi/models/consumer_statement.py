@@ -35,7 +35,7 @@ class ConsumerStatement(object):
     openapi_types = {
         'provider': 'str',
         'id': 'str',
-        'reported_date': 'datetime',
+        'reported_date': 'int',
         'statement': 'str'
     }
 
@@ -121,7 +121,7 @@ class ConsumerStatement(object):
 
 
         :return: The reported_date of this ConsumerStatement.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._reported_date
 
@@ -131,7 +131,7 @@ class ConsumerStatement(object):
 
 
         :param reported_date: The reported_date of this ConsumerStatement.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._reported_date = reported_date

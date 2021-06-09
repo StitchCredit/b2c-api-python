@@ -37,7 +37,7 @@ class Inquiry(object):
         'id': 'str',
         'type': 'str',
         'prefix': 'object',
-        'reported_date': 'datetime',
+        'reported_date': 'int',
         'contact_information': 'object'
     }
 
@@ -179,7 +179,7 @@ class Inquiry(object):
 
 
         :return: The reported_date of this Inquiry.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._reported_date
 
@@ -189,7 +189,7 @@ class Inquiry(object):
 
 
         :param reported_date: The reported_date of this Inquiry.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._reported_date = reported_date

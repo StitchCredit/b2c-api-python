@@ -35,14 +35,14 @@ class CollectionItem(object):
     openapi_types = {
         'provider': 'str',
         'id': 'str',
-        'reported_date': 'datetime',
-        'assigned_date': 'datetime',
+        'reported_date': 'int',
+        'assigned_date': 'int',
         'agency_client': 'str',
         'orginal_amount_owed': 'object',
         'account_number': 'str',
         'account_designator_code': 'str',
-        'balance_date': 'datetime',
-        'status_date': 'datetime',
+        'balance_date': 'int',
+        'status_date': 'int',
         'status': 'str',
         'amount': 'object'
     }
@@ -161,7 +161,7 @@ class CollectionItem(object):
 
 
         :return: The reported_date of this CollectionItem.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._reported_date
 
@@ -171,7 +171,7 @@ class CollectionItem(object):
 
 
         :param reported_date: The reported_date of this CollectionItem.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._reported_date = reported_date
@@ -182,7 +182,7 @@ class CollectionItem(object):
 
 
         :return: The assigned_date of this CollectionItem.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._assigned_date
 
@@ -192,7 +192,7 @@ class CollectionItem(object):
 
 
         :param assigned_date: The assigned_date of this CollectionItem.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._assigned_date = assigned_date
@@ -293,7 +293,7 @@ class CollectionItem(object):
 
 
         :return: The balance_date of this CollectionItem.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._balance_date
 
@@ -303,7 +303,7 @@ class CollectionItem(object):
 
 
         :param balance_date: The balance_date of this CollectionItem.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._balance_date = balance_date
@@ -314,7 +314,7 @@ class CollectionItem(object):
 
 
         :return: The status_date of this CollectionItem.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._status_date
 
@@ -324,7 +324,7 @@ class CollectionItem(object):
 
 
         :param status_date: The status_date of this CollectionItem.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._status_date = status_date

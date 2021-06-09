@@ -36,9 +36,9 @@ class AlertRespDTO(object):
         'id': 'str',
         'alert_id': 'str',
         'alert_type': 'str',
-        'creation_date': 'datetime',
+        'creation_date': 'int',
         'data_source': 'str',
-        'date_reported': 'datetime',
+        'date_reported': 'int',
         'reporting_frequency': 'str',
         'institution_type': 'str',
         'institution_name': 'str',
@@ -211,7 +211,7 @@ class AlertRespDTO(object):
 
 
         :return: The creation_date of this AlertRespDTO.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._creation_date
 
@@ -221,7 +221,7 @@ class AlertRespDTO(object):
 
 
         :param creation_date: The creation_date of this AlertRespDTO.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._creation_date = creation_date
@@ -253,7 +253,7 @@ class AlertRespDTO(object):
 
 
         :return: The date_reported of this AlertRespDTO.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._date_reported
 
@@ -263,7 +263,7 @@ class AlertRespDTO(object):
 
 
         :param date_reported: The date_reported of this AlertRespDTO.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._date_reported = date_reported

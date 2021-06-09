@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **provider_views** | [**list[CreditReportProviderView]**](CreditReportProviderView.md) |  | [optional] 
 **id** | **str** |  | [optional] 
 **report_type** | **str** |  | [optional] 
-**generated_date** | **datetime** |  | [optional] 
+**generated_date** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

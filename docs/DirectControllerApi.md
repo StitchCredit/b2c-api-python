@@ -82,10 +82,10 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -147,10 +147,10 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -212,10 +212,10 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -275,10 +275,10 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -339,10 +339,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -403,10 +403,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -467,10 +467,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -531,10 +531,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -595,10 +595,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -659,10 +659,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -723,10 +723,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -787,10 +787,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -845,10 +845,10 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -909,10 +909,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -967,10 +967,10 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1031,10 +1031,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1095,10 +1095,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1160,10 +1160,10 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Unauthorized |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
+**409** | Conflict |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1224,10 +1224,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**409** | Conflict |  -  |
+**401** | Access Denied |  -  |
 **503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
-**401** | Access Denied |  -  |
+**409** | Conflict |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

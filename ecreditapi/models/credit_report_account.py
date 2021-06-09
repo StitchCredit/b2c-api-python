@@ -46,25 +46,25 @@ class CreditReportAccount(object):
         'credit_limit_amount': 'object',
         'term_duration_months': 'int',
         'term_frequency': 'str',
-        'date_opened': 'datetime',
+        'date_opened': 'int',
         'balance_amount': 'object',
-        'reported_date': 'datetime',
+        'reported_date': 'int',
         'past_due_amount': 'object',
-        'last_payment_date': 'datetime',
+        'last_payment_date': 'int',
         'actual_payment': 'object',
         'monthly_payment': 'object',
-        'last_activity_date': 'datetime',
-        'major_delinquency_first_reported_date': 'datetime',
+        'last_activity_date': 'int',
+        'major_delinquency_first_reported_date': 'int',
         'months_reviewed': 'int',
         'creditor_classification': 'str',
         'activity_designator': 'str',
         'charge_off_amount': 'object',
-        'deferred_payment_start_date': 'datetime',
+        'deferred_payment_start_date': 'int',
         'balloon_payment_amount': 'object',
-        'balloon_payment_date': 'datetime',
-        'date_closed': 'datetime',
+        'balloon_payment_date': 'int',
+        'date_closed': 'int',
         'loan_type': 'object',
-        'first_delinquency_date': 'datetime',
+        'first_delinquency_date': 'int',
         'comments': 'list[CodeDescription]',
         'payment_history': 'list[PaymentHistoryYear]',
         'trended_data_history': 'object',
@@ -530,7 +530,7 @@ class CreditReportAccount(object):
 
 
         :return: The date_opened of this CreditReportAccount.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._date_opened
 
@@ -540,7 +540,7 @@ class CreditReportAccount(object):
 
 
         :param date_opened: The date_opened of this CreditReportAccount.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._date_opened = date_opened
@@ -572,7 +572,7 @@ class CreditReportAccount(object):
 
 
         :return: The reported_date of this CreditReportAccount.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._reported_date
 
@@ -582,7 +582,7 @@ class CreditReportAccount(object):
 
 
         :param reported_date: The reported_date of this CreditReportAccount.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._reported_date = reported_date
@@ -614,7 +614,7 @@ class CreditReportAccount(object):
 
 
         :return: The last_payment_date of this CreditReportAccount.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._last_payment_date
 
@@ -624,7 +624,7 @@ class CreditReportAccount(object):
 
 
         :param last_payment_date: The last_payment_date of this CreditReportAccount.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._last_payment_date = last_payment_date
@@ -677,7 +677,7 @@ class CreditReportAccount(object):
 
 
         :return: The last_activity_date of this CreditReportAccount.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._last_activity_date
 
@@ -687,7 +687,7 @@ class CreditReportAccount(object):
 
 
         :param last_activity_date: The last_activity_date of this CreditReportAccount.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._last_activity_date = last_activity_date
@@ -698,7 +698,7 @@ class CreditReportAccount(object):
 
 
         :return: The major_delinquency_first_reported_date of this CreditReportAccount.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._major_delinquency_first_reported_date
 
@@ -708,7 +708,7 @@ class CreditReportAccount(object):
 
 
         :param major_delinquency_first_reported_date: The major_delinquency_first_reported_date of this CreditReportAccount.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._major_delinquency_first_reported_date = major_delinquency_first_reported_date
@@ -815,7 +815,7 @@ class CreditReportAccount(object):
 
 
         :return: The deferred_payment_start_date of this CreditReportAccount.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._deferred_payment_start_date
 
@@ -825,7 +825,7 @@ class CreditReportAccount(object):
 
 
         :param deferred_payment_start_date: The deferred_payment_start_date of this CreditReportAccount.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._deferred_payment_start_date = deferred_payment_start_date
@@ -857,7 +857,7 @@ class CreditReportAccount(object):
 
 
         :return: The balloon_payment_date of this CreditReportAccount.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._balloon_payment_date
 
@@ -867,7 +867,7 @@ class CreditReportAccount(object):
 
 
         :param balloon_payment_date: The balloon_payment_date of this CreditReportAccount.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._balloon_payment_date = balloon_payment_date
@@ -878,7 +878,7 @@ class CreditReportAccount(object):
 
 
         :return: The date_closed of this CreditReportAccount.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._date_closed
 
@@ -888,7 +888,7 @@ class CreditReportAccount(object):
 
 
         :param date_closed: The date_closed of this CreditReportAccount.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._date_closed = date_closed
@@ -920,7 +920,7 @@ class CreditReportAccount(object):
 
 
         :return: The first_delinquency_date of this CreditReportAccount.  # noqa: E501
-        :rtype: datetime
+        :rtype: int
         """
         return self._first_delinquency_date
 
@@ -930,7 +930,7 @@ class CreditReportAccount(object):
 
 
         :param first_delinquency_date: The first_delinquency_date of this CreditReportAccount.  # noqa: E501
-        :type: datetime
+        :type: int
         """
 
         self._first_delinquency_date = first_delinquency_date
