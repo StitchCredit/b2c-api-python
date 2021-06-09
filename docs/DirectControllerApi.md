@@ -1,6 +1,6 @@
 # ecreditapi.DirectControllerApi
 
-All URIs are relative to *https://efx-wgt.stitchcredit.com/api*
+All URIs are relative to *http://localhost:8081/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,6 +15,7 @@ Method | HTTP request | Description
 [**efx_latest_scores**](DirectControllerApi.md#efx_latest_scores) | **GET** /direct/efx-latest-scores/{id} | 
 [**efx_score_history**](DirectControllerApi.md#efx_score_history) | **GET** /direct/efx-score-history/{id} | 
 [**efx_scores**](DirectControllerApi.md#efx_scores) | **GET** /direct/efx-scores/{id} | 
+[**get_user**](DirectControllerApi.md#get_user) | **GET** /direct/user/{id} | 
 [**login**](DirectControllerApi.md#login) | **POST** /direct/login | 
 [**preauth_token**](DirectControllerApi.md#preauth_token) | **GET** /direct/preauth-token/{id} | 
 [**refresh_token**](DirectControllerApi.md#refresh_token) | **GET** /direct/refresh-token | 
@@ -42,8 +43,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -83,8 +84,8 @@ void (empty response body)
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -107,8 +108,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -148,8 +149,8 @@ void (empty response body)
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -172,8 +173,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -213,8 +214,8 @@ void (empty response body)
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -237,8 +238,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -276,8 +277,8 @@ void (empty response body)
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -300,8 +301,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -340,8 +341,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -364,8 +365,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -404,8 +405,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -428,8 +429,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -468,8 +469,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -492,8 +493,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -532,8 +533,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -556,8 +557,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -596,8 +597,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -620,8 +621,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -660,8 +661,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -684,8 +685,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -724,8 +725,72 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
+**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_user**
+> UserRespDTO get_user(id)
+
+
+
+### Example
+
+* Bearer (JWT) Authentication (accessToken):
+```python
+from __future__ import print_function
+import time
+import ecreditapi
+from ecreditapi.rest import ApiException
+from pprint import pprint
+configuration = ecreditapi.Configuration()
+# Configure Bearer authorization (JWT): accessToken
+configuration.access_token = 'YOUR_BEARER_TOKEN'
+
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
+# Enter a context with an instance of the API client
+with ecreditapi.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = ecreditapi.DirectControllerApi(api_client)
+    id = 'id_example' # str | 
+
+    try:
+        api_response = api_instance.get_user(id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling DirectControllerApi->get_user: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | [**str**](.md)|  | 
+
+### Return type
+
+[**UserRespDTO**](UserRespDTO.md)
+
+### Authorization
+
+[accessToken](../README.md#accessToken)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: */*
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**400** | Bad Request |  -  |
+**409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
+**500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -782,8 +847,8 @@ No authorization required
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -806,8 +871,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -846,8 +911,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -904,8 +969,8 @@ No authorization required
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -928,8 +993,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -968,8 +1033,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -992,8 +1057,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -1032,8 +1097,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1056,8 +1121,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -1097,8 +1162,8 @@ void (empty response body)
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1121,8 +1186,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -1161,8 +1226,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Access Denied |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Access Denied |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

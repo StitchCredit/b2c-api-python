@@ -52,4 +52,5 @@ from ecreditapi.models.provider_view import ProviderView
 from ecreditapi.models.score_range import ScoreRange
 from ecreditapi.models.score_reason import ScoreReason
 from ecreditapi.models.user_login_resp_dto import UserLoginRespDTO
+from ecreditapi.models.user_resp_dto import UserRespDTO
 

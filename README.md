@@ -17,9 +17,9 @@ Python 2.7 and 3.4+
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/StitchCredit/b2c-api-python.git
+pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/StitchCredit/b2c-api-python.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
 
 Then import the package:
 ```python
@@ -55,8 +55,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
-configuration.host = "https://efx-wgt.stitchcredit.com/api"
+# Defining host is optional and default to http://localhost:8081/api
+configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -73,7 +73,7 @@ direct_change_email_req_dto = ecreditapi.DirectChangeEmailReqDTO() # DirectChang
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://efx-wgt.stitchcredit.com/api*
+All URIs are relative to *http://localhost:8081/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -88,6 +88,7 @@ Class | Method | HTTP request | Description
 *DirectControllerApi* | [**efx_latest_scores**](docs/DirectControllerApi.md#efx_latest_scores) | **GET** /direct/efx-latest-scores/{id} | 
 *DirectControllerApi* | [**efx_score_history**](docs/DirectControllerApi.md#efx_score_history) | **GET** /direct/efx-score-history/{id} | 
 *DirectControllerApi* | [**efx_scores**](docs/DirectControllerApi.md#efx_scores) | **GET** /direct/efx-scores/{id} | 
+*DirectControllerApi* | [**get_user**](docs/DirectControllerApi.md#get_user) | **GET** /direct/user/{id} | 
 *DirectControllerApi* | [**login**](docs/DirectControllerApi.md#login) | **POST** /direct/login | 
 *DirectControllerApi* | [**preauth_token**](docs/DirectControllerApi.md#preauth_token) | **GET** /direct/preauth-token/{id} | 
 *DirectControllerApi* | [**refresh_token**](docs/DirectControllerApi.md#refresh_token) | **GET** /direct/refresh-token | 
@@ -123,6 +124,7 @@ Class | Method | HTTP request | Description
  - [ScoreRange](docs/ScoreRange.md)
  - [ScoreReason](docs/ScoreReason.md)
  - [UserLoginRespDTO](docs/UserLoginRespDTO.md)
+ - [UserRespDTO](docs/UserRespDTO.md)
 
 
 ## Documentation For Authorization
