@@ -17,9 +17,9 @@ Python 2.7 and 3.4+
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+pip install git+https://github.com/StitchCredit/b2c-api-python.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/StitchCredit/b2c-api-python.git`)
 
 Then import the package:
 ```python
@@ -55,8 +55,8 @@ configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# Defining host is optional and default to https://efx-wgt.stitchcredit.com/api
+configuration.host = "https://efx-wgt.stitchcredit.com/api"
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -73,7 +73,7 @@ direct_change_email_req_dto = ecreditapi.DirectChangeEmailReqDTO() # DirectChang
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:8081/api*
+All URIs are relative to *https://efx-wgt.stitchcredit.com/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
