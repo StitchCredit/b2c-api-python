@@ -1,5 +1,6 @@
 # CreditScoreHistory
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -7,7 +8,7 @@ Name | Type | Description | Notes
 **score_type** | **str** |  | [optional] 
 **id** | **str** |  | [optional] 
 **score_model** | **str** |  | [optional] 
-**provider_views** | [**list[CreditScoreHistoryProviderView]**](CreditScoreHistoryProviderView.md) |  | [optional] 
+**provider_views** | [**[CreditScoreHistoryProviderView]**](CreditScoreHistoryProviderView.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

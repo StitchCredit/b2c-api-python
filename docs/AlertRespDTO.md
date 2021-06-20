@@ -1,5 +1,6 @@
 # AlertRespDTO
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

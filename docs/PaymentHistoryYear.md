@@ -1,5 +1,6 @@
 # PaymentHistoryYear
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

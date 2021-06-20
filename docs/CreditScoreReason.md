@@ -1,5 +1,6 @@
 # CreditScoreReason
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

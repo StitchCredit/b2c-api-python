@@ -1,5 +1,6 @@
 # CreditReportAccount
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -35,8 +36,8 @@ Name | Type | Description | Notes
 **date_closed** | **datetime** |  | [optional] 
 **loan_type** | [**CodeDescription**](CodeDescription.md) |  | [optional] 
 **first_delinquency_date** | **datetime** |  | [optional] 
-**comments** | [**list[CodeDescription]**](CodeDescription.md) |  | [optional] 
-**payment_history** | [**list[PaymentHistoryYear]**](PaymentHistoryYear.md) |  | [optional] 
+**comments** | [**[CodeDescription]**](CodeDescription.md) |  | [optional] 
+**payment_history** | [**[PaymentHistoryYear]**](PaymentHistoryYear.md) |  | [optional] 
 **trended_data_history** | [**TrendedDataHistory**](TrendedDataHistory.md) |  | [optional] 
 **is_negative** | **bool** |  | [optional] 
 

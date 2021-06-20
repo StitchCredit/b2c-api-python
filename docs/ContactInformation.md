@@ -1,5 +1,6 @@
 # ContactInformation
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

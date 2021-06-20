@@ -1,12 +1,13 @@
 # DirectUserRegReqDTO
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **email** | **str** |  | 
-**mobile** | **str** |  | [optional] 
 **fname** | **str** |  | 
 **lname** | **str** |  | 
+**mobile** | **str** |  | [optional] 
 **sms_msg** | **bool** |  | [optional] 
 **email_msg** | **bool** |  | [optional] 
 **push_msg** | **bool** |  | [optional] 

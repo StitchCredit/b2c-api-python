@@ -1,5 +1,6 @@
 # PreauthTokenDTO
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

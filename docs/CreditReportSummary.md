@@ -1,5 +1,6 @@
 # CreditReportSummary
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
