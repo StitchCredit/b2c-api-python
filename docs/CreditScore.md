@@ -3,10 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**generated_date** | **int** |  | [optional] 
-**score_type** | **str** |  | [optional] 
+**provider_views** | [**list[CreditScoreProviderView]**](CreditScoreProviderView.md) |  | [optional] 
 **id** | **str** |  | [optional] 
-**credit_report_id** | **str** |  | [optional] 
+**score_type** | **str** |  | [optional] 
+**score_model** | **str** |  | [optional] 
+**generated_date** | **datetime** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
