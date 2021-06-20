@@ -97,7 +97,7 @@ class Configuration(object):
       )
     """
 
-    def __init__(self, host="https://efx-wgt.stitchcredit.com/api",
+    def __init__(self, host="http://localhost:8081/api",
                  api_key=None, api_key_prefix=None,
                  username=None, password=None,
                  signing_info=None):
@@ -340,7 +340,7 @@ class Configuration(object):
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 1.0.0\n"\
-               "SDK Package Version: 1.0.0".\
+               "SDK Package Version: 1.0.2".\
                format(env=sys.platform, pyversion=sys.version)
 
     def get_host_settings(self):
@@ -350,7 +350,7 @@ class Configuration(object):
         """
         return [
             {
-                'url': "https://efx-wgt.stitchcredit.com/api",
+                'url': "http://localhost:8081/api",
                 'description': "local testing URL",
             }
         ]

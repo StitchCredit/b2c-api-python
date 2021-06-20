@@ -1,4 +1,4 @@
-# sc-direct-api.DirectControllerApi
+# ecreditapi.DirectControllerApi
 
 All URIs are relative to *http://localhost:8081/api*
 
@@ -36,21 +36,21 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
-direct_change_email_req_dto = sc-direct-api.DirectChangeEmailReqDTO() # DirectChangeEmailReqDTO | 
+direct_change_email_req_dto = ecreditapi.DirectChangeEmailReqDTO() # DirectChangeEmailReqDTO | 
 
     try:
         api_instance.change_email(id, direct_change_email_req_dto)
@@ -82,10 +82,10 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -101,19 +101,19 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 host = 'host_example' # str | 
 
@@ -147,10 +147,10 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -166,21 +166,21 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
-direct_change_mobile_req_dto = sc-direct-api.DirectChangeMobileReqDTO() # DirectChangeMobileReqDTO | 
+direct_change_mobile_req_dto = ecreditapi.DirectChangeMobileReqDTO() # DirectChangeMobileReqDTO | 
 
     try:
         api_instance.change_mobile(id, direct_change_mobile_req_dto)
@@ -212,10 +212,10 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -231,19 +231,19 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -275,10 +275,10 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -294,19 +294,19 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -339,10 +339,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -358,19 +358,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -403,10 +403,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -422,19 +422,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -467,10 +467,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -486,19 +486,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -531,10 +531,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -550,19 +550,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -595,10 +595,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -614,19 +614,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -659,10 +659,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -678,19 +678,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -723,10 +723,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -742,19 +742,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -787,10 +787,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -805,15 +805,15 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
 
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient() as api_client:
+with ecreditapi.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
-    direct_login_req_dto = sc-direct-api.DirectLoginReqDTO() # DirectLoginReqDTO | 
+    api_instance = ecreditapi.DirectControllerApi(api_client)
+    direct_login_req_dto = ecreditapi.DirectLoginReqDTO() # DirectLoginReqDTO | 
 
     try:
         api_response = api_instance.login(direct_login_req_dto)
@@ -845,10 +845,10 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -864,19 +864,19 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 
     try:
@@ -909,10 +909,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -927,14 +927,14 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
 
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient() as api_client:
+with ecreditapi.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     token = 'token_example' # str |  (optional)
 
     try:
@@ -967,10 +967,10 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -986,20 +986,20 @@ No authorization required
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
-    direct_user_reg_req_dto = sc-direct-api.DirectUserRegReqDTO() # DirectUserRegReqDTO | 
+    api_instance = ecreditapi.DirectControllerApi(api_client)
+    direct_user_reg_req_dto = ecreditapi.DirectUserRegReqDTO() # DirectUserRegReqDTO | 
 
     try:
         api_response = api_instance.register(direct_user_reg_req_dto)
@@ -1031,10 +1031,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1050,20 +1050,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
-    direct_user_reg_req_dto = sc-direct-api.DirectUserRegReqDTO() # DirectUserRegReqDTO | 
+    api_instance = ecreditapi.DirectControllerApi(api_client)
+    direct_user_reg_req_dto = ecreditapi.DirectUserRegReqDTO() # DirectUserRegReqDTO | 
 
     try:
         api_response = api_instance.register_old(direct_user_reg_req_dto)
@@ -1095,10 +1095,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1114,19 +1114,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | 
 rmonly = True # bool | 
 
@@ -1160,10 +1160,10 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1179,19 +1179,19 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import sc-direct-api
-from sc-direct-api.rest import ApiException
+import ecreditapi
+from ecreditapi.rest import ApiException
 from pprint import pprint
-configuration = sc-direct-api.Configuration()
+configuration = ecreditapi.Configuration()
 # Configure Bearer authorization (JWT): accessToken
 configuration.access_token = 'YOUR_BEARER_TOKEN'
 
 # Defining host is optional and default to http://localhost:8081/api
 configuration.host = "http://localhost:8081/api"
 # Enter a context with an instance of the API client
-with sc-direct-api.ApiClient(configuration) as api_client:
+with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = sc-direct-api.DirectControllerApi(api_client)
+    api_instance = ecreditapi.DirectControllerApi(api_client)
     id = 'id_example' # str | UserId to generate preauth token for
 
     try:
@@ -1224,10 +1224,10 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**503** | Service Unavailable |  -  |
 **500** | Internal Server Error |  -  |
 **401** | Access Denied |  -  |
 **409** | Conflict |  -  |
+**503** | Service Unavailable |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

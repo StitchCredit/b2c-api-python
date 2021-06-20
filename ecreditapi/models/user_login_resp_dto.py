@@ -38,8 +38,8 @@ class UserLoginRespDTO(object):
         'fname': 'str',
         'lname': 'str',
         'idpass': 'bool',
-        'created_at': 'int',
-        'updated_at': 'int',
+        'created_at': 'datetime',
+        'updated_at': 'datetime',
         'sms_msg': 'bool',
         'email_msg': 'bool',
         'push_msg': 'bool',
@@ -228,7 +228,7 @@ class UserLoginRespDTO(object):
 
 
         :return: The created_at of this UserLoginRespDTO.  # noqa: E501
-        :rtype: int
+        :rtype: datetime
         """
         return self._created_at
 
@@ -238,7 +238,7 @@ class UserLoginRespDTO(object):
 
 
         :param created_at: The created_at of this UserLoginRespDTO.  # noqa: E501
-        :type: int
+        :type: datetime
         """
 
         self._created_at = created_at
@@ -249,7 +249,7 @@ class UserLoginRespDTO(object):
 
 
         :return: The updated_at of this UserLoginRespDTO.  # noqa: E501
-        :rtype: int
+        :rtype: datetime
         """
         return self._updated_at
 
@@ -259,7 +259,7 @@ class UserLoginRespDTO(object):
 
 
         :param updated_at: The updated_at of this UserLoginRespDTO.  # noqa: E501
-        :type: int
+        :type: datetime
         """
 
         self._updated_at = updated_at

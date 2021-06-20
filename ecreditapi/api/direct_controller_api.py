@@ -721,7 +721,7 @@ class DirectControllerApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: LatestScore
+        :return: CreditScore
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -747,7 +747,7 @@ class DirectControllerApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(LatestScore, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(CreditScore, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -802,7 +802,7 @@ class DirectControllerApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='LatestScore',  # noqa: E501
+            response_type='CreditScore',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -933,7 +933,7 @@ class DirectControllerApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: list[LatestScore]
+        :return: CreditScore
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -959,7 +959,7 @@ class DirectControllerApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(list[LatestScore], status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(CreditScore, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1014,7 +1014,7 @@ class DirectControllerApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[LatestScore]',  # noqa: E501
+            response_type='CreditScore',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -1039,7 +1039,7 @@ class DirectControllerApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: list[HistoricalScore]
+        :return: list[CreditScoreHistory]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1065,7 +1065,7 @@ class DirectControllerApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(list[HistoricalScore], status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(list[CreditScoreHistory], status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1120,7 +1120,7 @@ class DirectControllerApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[HistoricalScore]',  # noqa: E501
+            response_type='list[CreditScoreHistory]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -1145,7 +1145,7 @@ class DirectControllerApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: list[CreditScore]
+        :return: list[CreditScoreAbstract]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1171,7 +1171,7 @@ class DirectControllerApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(list[CreditScore], status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(list[CreditScoreAbstract], status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1226,7 +1226,7 @@ class DirectControllerApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[CreditScore]',  # noqa: E501
+            response_type='list[CreditScoreAbstract]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501

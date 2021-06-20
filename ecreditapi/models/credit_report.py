@@ -36,7 +36,7 @@ class CreditReport(object):
         'provider_views': 'list[CreditReportProviderView]',
         'id': 'str',
         'report_type': 'str',
-        'generated_date': 'int'
+        'generated_date': 'datetime'
     }
 
     attribute_map = {
@@ -142,7 +142,7 @@ class CreditReport(object):
 
 
         :return: The generated_date of this CreditReport.  # noqa: E501
-        :rtype: int
+        :rtype: datetime
         """
         return self._generated_date
 
@@ -152,7 +152,7 @@ class CreditReport(object):
 
 
         :param generated_date: The generated_date of this CreditReport.  # noqa: E501
-        :type: int
+        :type: datetime
         """
 
         self._generated_date = generated_date

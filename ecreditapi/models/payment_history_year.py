@@ -34,18 +34,18 @@ class PaymentHistoryYear(object):
     """
     openapi_types = {
         'year': 'int',
-        'january': 'object',
-        'february': 'object',
-        'march': 'object',
-        'april': 'object',
-        'may': 'object',
-        'june': 'object',
-        'july': 'object',
-        'august': 'object',
-        'september': 'object',
-        'october': 'object',
-        'november': 'object',
-        'december': 'object'
+        'january': 'PaymentHistoryMonth',
+        'february': 'PaymentHistoryMonth',
+        'march': 'PaymentHistoryMonth',
+        'april': 'PaymentHistoryMonth',
+        'may': 'PaymentHistoryMonth',
+        'june': 'PaymentHistoryMonth',
+        'july': 'PaymentHistoryMonth',
+        'august': 'PaymentHistoryMonth',
+        'september': 'PaymentHistoryMonth',
+        'october': 'PaymentHistoryMonth',
+        'november': 'PaymentHistoryMonth',
+        'december': 'PaymentHistoryMonth'
     }
 
     attribute_map = {
@@ -139,7 +139,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The january of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._january
 
@@ -149,7 +149,7 @@ class PaymentHistoryYear(object):
 
 
         :param january: The january of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._january = january
@@ -160,7 +160,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The february of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._february
 
@@ -170,7 +170,7 @@ class PaymentHistoryYear(object):
 
 
         :param february: The february of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._february = february
@@ -181,7 +181,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The march of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._march
 
@@ -191,7 +191,7 @@ class PaymentHistoryYear(object):
 
 
         :param march: The march of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._march = march
@@ -202,7 +202,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The april of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._april
 
@@ -212,7 +212,7 @@ class PaymentHistoryYear(object):
 
 
         :param april: The april of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._april = april
@@ -223,7 +223,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The may of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._may
 
@@ -233,7 +233,7 @@ class PaymentHistoryYear(object):
 
 
         :param may: The may of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._may = may
@@ -244,7 +244,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The june of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._june
 
@@ -254,7 +254,7 @@ class PaymentHistoryYear(object):
 
 
         :param june: The june of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._june = june
@@ -265,7 +265,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The july of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._july
 
@@ -275,7 +275,7 @@ class PaymentHistoryYear(object):
 
 
         :param july: The july of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._july = july
@@ -286,7 +286,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The august of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._august
 
@@ -296,7 +296,7 @@ class PaymentHistoryYear(object):
 
 
         :param august: The august of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._august = august
@@ -307,7 +307,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The september of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._september
 
@@ -317,7 +317,7 @@ class PaymentHistoryYear(object):
 
 
         :param september: The september of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._september = september
@@ -328,7 +328,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The october of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._october
 
@@ -338,7 +338,7 @@ class PaymentHistoryYear(object):
 
 
         :param october: The october of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._october = october
@@ -349,7 +349,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The november of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._november
 
@@ -359,7 +359,7 @@ class PaymentHistoryYear(object):
 
 
         :param november: The november of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._november = november
@@ -370,7 +370,7 @@ class PaymentHistoryYear(object):
 
 
         :return: The december of this PaymentHistoryYear.  # noqa: E501
-        :rtype: object
+        :rtype: PaymentHistoryMonth
         """
         return self._december
 
@@ -380,7 +380,7 @@ class PaymentHistoryYear(object):
 
 
         :param december: The december of this PaymentHistoryYear.  # noqa: E501
-        :type: object
+        :type: PaymentHistoryMonth
         """
 
         self._december = december

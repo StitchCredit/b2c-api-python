@@ -36,9 +36,9 @@ class Inquiry(object):
         'provider': 'str',
         'id': 'str',
         'type': 'str',
-        'prefix': 'object',
-        'reported_date': 'int',
-        'contact_information': 'object'
+        'prefix': 'CodeDescription',
+        'reported_date': 'datetime',
+        'contact_information': 'ContactInformation'
     }
 
     attribute_map = {
@@ -158,7 +158,7 @@ class Inquiry(object):
 
 
         :return: The prefix of this Inquiry.  # noqa: E501
-        :rtype: object
+        :rtype: CodeDescription
         """
         return self._prefix
 
@@ -168,7 +168,7 @@ class Inquiry(object):
 
 
         :param prefix: The prefix of this Inquiry.  # noqa: E501
-        :type: object
+        :type: CodeDescription
         """
 
         self._prefix = prefix
@@ -179,7 +179,7 @@ class Inquiry(object):
 
 
         :return: The reported_date of this Inquiry.  # noqa: E501
-        :rtype: int
+        :rtype: datetime
         """
         return self._reported_date
 
@@ -189,7 +189,7 @@ class Inquiry(object):
 
 
         :param reported_date: The reported_date of this Inquiry.  # noqa: E501
-        :type: int
+        :type: datetime
         """
 
         self._reported_date = reported_date
@@ -200,7 +200,7 @@ class Inquiry(object):
 
 
         :return: The contact_information of this Inquiry.  # noqa: E501
-        :rtype: object
+        :rtype: ContactInformation
         """
         return self._contact_information
 
@@ -210,7 +210,7 @@ class Inquiry(object):
 
 
         :param contact_information: The contact_information of this Inquiry.  # noqa: E501
-        :type: object
+        :type: ContactInformation
         """
 
         self._contact_information = contact_information

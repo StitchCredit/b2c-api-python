@@ -38,8 +38,8 @@ class UserRespDTO(object):
         'fname': 'str',
         'lname': 'str',
         'idpass': 'bool',
-        'created_at': 'int',
-        'updated_at': 'int',
+        'created_at': 'datetime',
+        'updated_at': 'datetime',
         'sms_msg': 'bool',
         'email_msg': 'bool',
         'push_msg': 'bool',
@@ -213,7 +213,7 @@ class UserRespDTO(object):
 
 
         :return: The created_at of this UserRespDTO.  # noqa: E501
-        :rtype: int
+        :rtype: datetime
         """
         return self._created_at
 
@@ -223,7 +223,7 @@ class UserRespDTO(object):
 
 
         :param created_at: The created_at of this UserRespDTO.  # noqa: E501
-        :type: int
+        :type: datetime
         """
 
         self._created_at = created_at
@@ -234,7 +234,7 @@ class UserRespDTO(object):
 
 
         :return: The updated_at of this UserRespDTO.  # noqa: E501
-        :rtype: int
+        :rtype: datetime
         """
         return self._updated_at
 
@@ -244,7 +244,7 @@ class UserRespDTO(object):
 
 
         :param updated_at: The updated_at of this UserRespDTO.  # noqa: E501
-        :type: int
+        :type: datetime
         """
 
         self._updated_at = updated_at

@@ -34,14 +34,14 @@ class CreditReportProviderView(object):
     """
     openapi_types = {
         'provider': 'str',
-        'summary': 'object',
+        'summary': 'CreditReportSummary',
         'revolving_accounts': 'list[CreditReportAccount]',
         'mortgage_accounts': 'list[CreditReportAccount]',
         'installment_accounts': 'list[CreditReportAccount]',
         'other_accounts': 'list[CreditReportAccount]',
         'inquiries': 'list[Inquiry]',
         'consumer_statements': 'list[ConsumerStatement]',
-        'public_records': 'object',
+        'public_records': 'PublicRecords',
         'collections': 'list[CollectionItem]'
     }
 
@@ -130,7 +130,7 @@ class CreditReportProviderView(object):
 
 
         :return: The summary of this CreditReportProviderView.  # noqa: E501
-        :rtype: object
+        :rtype: CreditReportSummary
         """
         return self._summary
 
@@ -140,7 +140,7 @@ class CreditReportProviderView(object):
 
 
         :param summary: The summary of this CreditReportProviderView.  # noqa: E501
-        :type: object
+        :type: CreditReportSummary
         """
 
         self._summary = summary
@@ -277,7 +277,7 @@ class CreditReportProviderView(object):
 
 
         :return: The public_records of this CreditReportProviderView.  # noqa: E501
-        :rtype: object
+        :rtype: PublicRecords
         """
         return self._public_records
 
@@ -287,7 +287,7 @@ class CreditReportProviderView(object):
 
 
         :param public_records: The public_records of this CreditReportProviderView.  # noqa: E501
-        :type: object
+        :type: PublicRecords
         """
 
         self._public_records = public_records
