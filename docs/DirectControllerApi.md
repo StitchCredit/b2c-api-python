@@ -34,36 +34,50 @@ Method | HTTP request | Description
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.direct_change_email_req_dto import DirectChangeEmailReqDTO
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
-direct_change_email_req_dto = ecreditapi.DirectChangeEmailReqDTO() # DirectChangeEmailReqDTO | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
+    direct_change_email_req_dto = DirectChangeEmailReqDTO(
+        email="email_example",
+    ) # DirectChangeEmailReqDTO | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_instance.change_email(id, direct_change_email_req_dto)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->change_email: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
- **direct_change_email_req_dto** | [**DirectChangeEmailReqDTO**](DirectChangeEmailReqDTO.md)|  | 
+ **id** | **str**|  |
+ **direct_change_email_req_dto** | [**DirectChangeEmailReqDTO**](DirectChangeEmailReqDTO.md)|  |
 
 ### Return type
 
@@ -78,14 +92,15 @@ void (empty response body)
  - **Content-Type**: application/json
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -99,36 +114,47 @@ void (empty response body)
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
-host = 'host_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
+    host = "host_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_instance.change_host(id, host)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->change_host: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
- **host** | **str**|  | 
+ **id** | **str**|  |
+ **host** | **str**|  |
 
 ### Return type
 
@@ -143,14 +169,15 @@ void (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -164,36 +191,50 @@ void (empty response body)
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.direct_change_mobile_req_dto import DirectChangeMobileReqDTO
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
-direct_change_mobile_req_dto = ecreditapi.DirectChangeMobileReqDTO() # DirectChangeMobileReqDTO | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
+    direct_change_mobile_req_dto = DirectChangeMobileReqDTO(
+        mobile="mobile_example",
+    ) # DirectChangeMobileReqDTO | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_instance.change_mobile(id, direct_change_mobile_req_dto)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->change_mobile: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
- **direct_change_mobile_req_dto** | [**DirectChangeMobileReqDTO**](DirectChangeMobileReqDTO.md)|  | 
+ **id** | **str**|  |
+ **direct_change_mobile_req_dto** | [**DirectChangeMobileReqDTO**](DirectChangeMobileReqDTO.md)|  |
 
 ### Return type
 
@@ -208,14 +249,15 @@ void (empty response body)
  - **Content-Type**: application/json
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -229,34 +271,45 @@ void (empty response body)
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_instance.close_account(id)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->close_account: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
+ **id** | **str**|  |
 
 ### Return type
 
@@ -271,14 +324,15 @@ void (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -292,35 +346,47 @@ void (empty response body)
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.alert_resp_dto import AlertRespDTO
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.efx_alert(id)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->efx_alert: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
+ **id** | **str**|  |
 
 ### Return type
 
@@ -335,14 +401,15 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -356,35 +423,47 @@ Name | Type | Description  | Notes
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.efx_config_resp_dto import EfxConfigRespDTO
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.efx_config(id)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->efx_config: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
+ **id** | **str**|  |
 
 ### Return type
 
@@ -399,20 +478,21 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **efx_latest_efx_score**
-> CreditScore efx_latest_efx_score(id)
+> CreditScoreScore efx_latest_efx_score(id)
 
 
 
@@ -420,39 +500,51 @@ Name | Type | Description  | Notes
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.credit_score_score import CreditScoreScore
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.efx_latest_efx_score(id)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->efx_latest_efx_score: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
+ **id** | **str**|  |
 
 ### Return type
 
-[**CreditScore**](CreditScore.md)
+[**CreditScoreScore**](CreditScoreScore.md)
 
 ### Authorization
 
@@ -463,20 +555,21 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **efx_latest_report**
-> CreditReport efx_latest_report(id)
+> CreditReportReport efx_latest_report(id)
 
 
 
@@ -484,39 +577,51 @@ Name | Type | Description  | Notes
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.credit_report_report import CreditReportReport
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.efx_latest_report(id)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->efx_latest_report: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
+ **id** | **str**|  |
 
 ### Return type
 
-[**CreditReport**](CreditReport.md)
+[**CreditReportReport**](CreditReportReport.md)
 
 ### Authorization
 
@@ -527,20 +632,21 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **efx_latest_scores**
-> CreditScore efx_latest_scores(id)
+> CreditScoreScore efx_latest_scores(id)
 
 
 
@@ -548,39 +654,51 @@ Name | Type | Description  | Notes
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.credit_score_score import CreditScoreScore
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.efx_latest_scores(id)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->efx_latest_scores: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
+ **id** | **str**|  |
 
 ### Return type
 
-[**CreditScore**](CreditScore.md)
+[**CreditScoreScore**](CreditScoreScore.md)
 
 ### Authorization
 
@@ -591,20 +709,21 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **efx_score_history**
-> list[CreditScoreHistory] efx_score_history(id)
+> [CreditScoreHistoryScore] efx_score_history(id)
 
 
 
@@ -612,39 +731,51 @@ Name | Type | Description  | Notes
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.credit_score_history_score import CreditScoreHistoryScore
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.efx_score_history(id)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->efx_score_history: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
+ **id** | **str**|  |
 
 ### Return type
 
-[**list[CreditScoreHistory]**](CreditScoreHistory.md)
+[**[CreditScoreHistoryScore]**](CreditScoreHistoryScore.md)
 
 ### Authorization
 
@@ -655,20 +786,21 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **efx_scores**
-> list[CreditScoreAbstract] efx_scores(id)
+> [CreditScoreAbstractScore] efx_scores(id)
 
 
 
@@ -676,39 +808,51 @@ Name | Type | Description  | Notes
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.credit_score_abstract_score import CreditScoreAbstractScore
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.efx_scores(id)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->efx_scores: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
+ **id** | **str**|  |
 
 ### Return type
 
-[**list[CreditScoreAbstract]**](CreditScoreAbstract.md)
+[**[CreditScoreAbstractScore]**](CreditScoreAbstractScore.md)
 
 ### Authorization
 
@@ -719,14 +863,15 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -740,35 +885,47 @@ Name | Type | Description  | Notes
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.user_resp_dto import UserRespDTO
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.get_user(id)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->get_user: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
+ **id** | **str**|  |
 
 ### Return type
 
@@ -783,14 +940,15 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -803,30 +961,42 @@ Name | Type | Description  | Notes
 ### Example
 
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.direct_login_req_dto import DirectLoginReqDTO
+from ecreditapi.model.login_resp_dto import LoginRespDTO
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
+
 
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    direct_login_req_dto = ecreditapi.DirectLoginReqDTO() # DirectLoginReqDTO | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    direct_login_req_dto = DirectLoginReqDTO(
+        apikey="apikey_example",
+        secret="secret_example",
+    ) # DirectLoginReqDTO | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.login(direct_login_req_dto)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->login: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **direct_login_req_dto** | [**DirectLoginReqDTO**](DirectLoginReqDTO.md)|  | 
+ **direct_login_req_dto** | [**DirectLoginReqDTO**](DirectLoginReqDTO.md)|  |
 
 ### Return type
 
@@ -841,14 +1011,15 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -862,35 +1033,47 @@ No authorization required
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.preauth_token_dto import PreauthTokenDTO
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.preauth_token(id)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->preauth_token: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
+ **id** | **str**|  |
 
 ### Return type
 
@@ -905,50 +1088,60 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **refresh_token**
-> LoginRespDTO refresh_token(token=token)
+> LoginRespDTO refresh_token()
 
 
 
 ### Example
 
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.login_resp_dto import LoginRespDTO
 from pprint import pprint
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
+
 
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    token = 'token_example' # str |  (optional)
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    token = "token_example" # str |  (optional)
 
+    # example passing only required values which don't have defaults set
+    # and optional values
     try:
         api_response = api_instance.refresh_token(token=token)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->refresh_token: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **token** | **str**|  | [optional] 
+ **token** | **str**|  | [optional]
 
 ### Return type
 
@@ -963,14 +1156,15 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -984,35 +1178,56 @@ No authorization required
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.preauth_token_dto import PreauthTokenDTO
+from ecreditapi.model.direct_user_reg_req_dto import DirectUserRegReqDTO
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    direct_user_reg_req_dto = ecreditapi.DirectUserRegReqDTO() # DirectUserRegReqDTO | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    direct_user_reg_req_dto = DirectUserRegReqDTO(
+        email="email_example",
+        mobile="mobile_example",
+        fname="fname_example",
+        lname="lname_example",
+        sms_msg=True,
+        email_msg=True,
+        push_msg=True,
+    ) # DirectUserRegReqDTO | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.register(direct_user_reg_req_dto)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->register: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **direct_user_reg_req_dto** | [**DirectUserRegReqDTO**](DirectUserRegReqDTO.md)|  | 
+ **direct_user_reg_req_dto** | [**DirectUserRegReqDTO**](DirectUserRegReqDTO.md)|  |
 
 ### Return type
 
@@ -1027,14 +1242,15 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1048,35 +1264,56 @@ Name | Type | Description  | Notes
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.user_login_resp_dto import UserLoginRespDTO
+from ecreditapi.model.direct_user_reg_req_dto import DirectUserRegReqDTO
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    direct_user_reg_req_dto = ecreditapi.DirectUserRegReqDTO() # DirectUserRegReqDTO | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    direct_user_reg_req_dto = DirectUserRegReqDTO(
+        email="email_example",
+        mobile="mobile_example",
+        fname="fname_example",
+        lname="lname_example",
+        sms_msg=True,
+        email_msg=True,
+        push_msg=True,
+    ) # DirectUserRegReqDTO | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.register_old(direct_user_reg_req_dto)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->register_old: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **direct_user_reg_req_dto** | [**DirectUserRegReqDTO**](DirectUserRegReqDTO.md)|  | 
+ **direct_user_reg_req_dto** | [**DirectUserRegReqDTO**](DirectUserRegReqDTO.md)|  |
 
 ### Return type
 
@@ -1091,14 +1328,15 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1112,36 +1350,47 @@ Name | Type | Description  | Notes
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | 
-rmonly = True # bool | 
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | 
+    rmonly = True # bool | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_instance.update_refresh(id, rmonly)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->update_refresh: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)|  | 
- **rmonly** | **bool**|  | 
+ **id** | **str**|  |
+ **rmonly** | **bool**|  |
 
 ### Return type
 
@@ -1156,14 +1405,15 @@ void (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Unauthorized |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Unauthorized |  -  |
+**500** | Internal Server Error |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1177,35 +1427,47 @@ void (empty response body)
 
 * Bearer (JWT) Authentication (accessToken):
 ```python
-from __future__ import print_function
 import time
 import ecreditapi
-from ecreditapi.rest import ApiException
+from ecreditapi.api import direct_controller_api
+from ecreditapi.model.user_login_resp_dto import UserLoginRespDTO
 from pprint import pprint
-configuration = ecreditapi.Configuration()
-# Configure Bearer authorization (JWT): accessToken
-configuration.access_token = 'YOUR_BEARER_TOKEN'
+# Defining the host is optional and defaults to http://localhost:8081/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = ecreditapi.Configuration(
+    host = "http://localhost:8081/api"
+)
 
-# Defining host is optional and default to http://localhost:8081/api
-configuration.host = "http://localhost:8081/api"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization (JWT): accessToken
+configuration = ecreditapi.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
 # Enter a context with an instance of the API client
 with ecreditapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ecreditapi.DirectControllerApi(api_client)
-    id = 'id_example' # str | UserId to generate preauth token for
+    api_instance = direct_controller_api.DirectControllerApi(api_client)
+    id = "id_example" # str | UserId to generate preauth token for
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.user_token_old(id)
         pprint(api_response)
-    except ApiException as e:
+    except ecreditapi.ApiException as e:
         print("Exception when calling DirectControllerApi->user_token_old: %s\n" % e)
 ```
+
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**str**](.md)| UserId to generate preauth token for | 
+ **id** | **str**| UserId to generate preauth token for |
 
 ### Return type
 
@@ -1220,14 +1482,15 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: */*
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **400** | Bad Request |  -  |
-**500** | Internal Server Error |  -  |
-**401** | Access Denied |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
+**401** | Access Denied |  -  |
+**500** | Internal Server Error |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
