@@ -1,10 +1,9 @@
 # CreditScore
 
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**provider_views** | [**[CreditScoreProviderView]**](CreditScoreProviderView.md) |  | [optional] 
+**provider_views** | [**list[CreditScoreProviderView]**](CreditScoreProviderView.md) |  | [optional] 
 **id** | **str** |  | [optional] 
 **score_type** | **str** |  | [optional] 
 **score_model** | **str** |  | [optional] 

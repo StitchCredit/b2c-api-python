@@ -39,7 +39,7 @@ class CreditReportSummary(object):
         'report_type': 'str',
         'provider': 'str',
         'subject': 'PersonSubject',
-        'credit_score': 'CreditScore',
+        'credit_score': 'CreditScoreProviderView',
         'revolving_accounts': 'CreditReportSummaryAccounts',
         'mortgage_accounts': 'CreditReportSummaryAccounts',
         'installment_accounts': 'CreditReportSummaryAccounts',
@@ -326,7 +326,7 @@ class CreditReportSummary(object):
 
 
         :return: The credit_score of this CreditReportSummary.  # noqa: E501
-        :rtype: CreditScore
+        :rtype: CreditScoreProviderView
         """
         return self._credit_score
 
@@ -336,7 +336,7 @@ class CreditReportSummary(object):
 
 
         :param credit_score: The credit_score of this CreditReportSummary.  # noqa: E501
-        :type: CreditScore
+        :type: CreditScoreProviderView
         """
 
         self._credit_score = credit_score

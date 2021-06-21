@@ -1,10 +1,9 @@
 # CreditReport
 
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**provider_views** | [**[CreditReportProviderView]**](CreditReportProviderView.md) |  | [optional] 
+**provider_views** | [**list[CreditReportProviderView]**](CreditReportProviderView.md) |  | [optional] 
 **id** | **str** |  | [optional] 
 **report_type** | **str** |  | [optional] 
 **generated_date** | **datetime** |  | [optional] 

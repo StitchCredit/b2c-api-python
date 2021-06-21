@@ -1,6 +1,5 @@
 # CreditReportSummary
 
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,7 +9,7 @@ Name | Type | Description | Notes
 **report_type** | **str** |  | [optional] 
 **provider** | **str** |  | [optional] 
 **subject** | [**PersonSubject**](PersonSubject.md) |  | [optional] 
-**credit_score** | [**CreditScore**](CreditScore.md) |  | [optional] 
+**credit_score** | [**CreditScoreProviderView**](CreditScoreProviderView.md) |  | [optional] 
 **revolving_accounts** | [**CreditReportSummaryAccounts**](CreditReportSummaryAccounts.md) |  | [optional] 
 **mortgage_accounts** | [**CreditReportSummaryAccounts**](CreditReportSummaryAccounts.md) |  | [optional] 
 **installment_accounts** | [**CreditReportSummaryAccounts**](CreditReportSummaryAccounts.md) |  | [optional] 

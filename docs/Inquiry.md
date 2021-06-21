@@ -1,6 +1,5 @@
 # Inquiry
 
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

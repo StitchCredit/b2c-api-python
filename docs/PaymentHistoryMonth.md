@@ -1,6 +1,5 @@
 # PaymentHistoryMonth
 
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

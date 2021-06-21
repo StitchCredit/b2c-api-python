@@ -1,6 +1,5 @@
 # LoginRespDTO
 
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

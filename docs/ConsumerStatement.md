@@ -1,6 +1,5 @@
 # ConsumerStatement
 
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

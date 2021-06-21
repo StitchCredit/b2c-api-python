@@ -1,6 +1,5 @@
 # EfxConfigRespDTO
 
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
