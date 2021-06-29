@@ -93,7 +93,7 @@ class Configuration(object):
                  ):
         """Constructor
         """
-        self._base_path = "http://localhost:8081/api" if host is None else host
+        self._base_path = "https://efx-dev.stitchcredit.com/api" if host is None else host
         """Default Base url
         """
         self.server_index = 0 if server_index is None and host is None else server_index
@@ -386,7 +386,7 @@ class Configuration(object):
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 1.0.0\n"\
-               "SDK Package Version: 1.0.5".\
+               "SDK Package Version: 1.0.6".\
                format(env=sys.platform, pyversion=sys.version)
 
     def get_host_settings(self):
@@ -396,8 +396,8 @@ class Configuration(object):
         """
         return [
             {
-                'url': "http://localhost:8081/api",
-                'description': "local testing URL",
+                'url': "https://efx-dev.stitchcredit.com/api",
+                'description': "Development Server URL",
             }
         ]
 

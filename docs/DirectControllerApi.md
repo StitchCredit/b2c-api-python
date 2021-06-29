@@ -1,6 +1,6 @@
 # ecreditapi.DirectControllerApi
 
-All URIs are relative to *http://localhost:8081/api*
+All URIs are relative to *https://efx-dev.stitchcredit.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -39,10 +39,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.direct_change_email_req_dto import DirectChangeEmailReqDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -99,8 +99,8 @@ void (empty response body)
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -118,10 +118,10 @@ import time
 import ecreditapi
 from ecreditapi.api import direct_controller_api
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -176,8 +176,8 @@ void (empty response body)
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -196,10 +196,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.direct_change_mobile_req_dto import DirectChangeMobileReqDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -256,8 +256,8 @@ void (empty response body)
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -275,10 +275,10 @@ import time
 import ecreditapi
 from ecreditapi.api import direct_controller_api
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -331,8 +331,8 @@ void (empty response body)
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -351,10 +351,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.alert_resp_dto import AlertRespDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -408,8 +408,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -428,10 +428,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.efx_config_resp_dto import EfxConfigRespDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -485,8 +485,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -505,10 +505,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.credit_score_score import CreditScoreScore
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -562,8 +562,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -582,10 +582,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.credit_report_report import CreditReportReport
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -639,8 +639,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -659,10 +659,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.credit_score_score import CreditScoreScore
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -716,8 +716,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -736,10 +736,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.credit_score_history_score import CreditScoreHistoryScore
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -793,8 +793,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -813,10 +813,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.credit_score_abstract_score import CreditScoreAbstractScore
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -870,8 +870,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -890,10 +890,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.user_resp_dto import UserRespDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -947,8 +947,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -967,10 +967,10 @@ from ecreditapi.api import direct_controller_api
 from ecreditapi.model.direct_login_req_dto import DirectLoginReqDTO
 from ecreditapi.model.login_resp_dto import LoginRespDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 
@@ -1018,8 +1018,8 @@ No authorization required
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1038,10 +1038,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.preauth_token_dto import PreauthTokenDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1095,8 +1095,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1114,10 +1114,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.login_resp_dto import LoginRespDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 
@@ -1163,8 +1163,8 @@ No authorization required
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1184,10 +1184,10 @@ from ecreditapi.api import direct_controller_api
 from ecreditapi.model.preauth_token_dto import PreauthTokenDTO
 from ecreditapi.model.direct_user_reg_req_dto import DirectUserRegReqDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1249,8 +1249,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1270,10 +1270,10 @@ from ecreditapi.api import direct_controller_api
 from ecreditapi.model.user_login_resp_dto import UserLoginRespDTO
 from ecreditapi.model.direct_user_reg_req_dto import DirectUserRegReqDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1335,8 +1335,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1354,10 +1354,10 @@ import time
 import ecreditapi
 from ecreditapi.api import direct_controller_api
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1412,8 +1412,8 @@ void (empty response body)
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Unauthorized |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Unauthorized |  -  |
 **204** | No Content |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1432,10 +1432,10 @@ import ecreditapi
 from ecreditapi.api import direct_controller_api
 from ecreditapi.model.user_login_resp_dto import UserLoginRespDTO
 from pprint import pprint
-# Defining the host is optional and defaults to http://localhost:8081/api
+# Defining the host is optional and defaults to https://efx-dev.stitchcredit.com/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = ecreditapi.Configuration(
-    host = "http://localhost:8081/api"
+    host = "https://efx-dev.stitchcredit.com/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1489,8 +1489,8 @@ Name | Type | Description  | Notes
 **400** | Bad Request |  -  |
 **409** | Conflict |  -  |
 **503** | Service Unavailable |  -  |
-**401** | Access Denied |  -  |
 **500** | Internal Server Error |  -  |
+**401** | Access Denied |  -  |
 **200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
